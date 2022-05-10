@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+    <link rel="stylesheet" href="./basic.css" type="text/css">
+</head>
+
+<body>
+    <div class="form" id="all">
+        <div>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName">
+            <div class="error-text" id="firstNameError"></div>
+        </div>
+
+        <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName">
+            <div class="error-text" id="lastNameError"></div>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+            <div class="error-text" id="emailError"></div>
+        </div>
+        
+        <div>
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone">
+            <div class="error-text" id="phoneError"></div>
+        </div>
+        
+        <div>
+            <label for="physical address">Physical address</label>
+            <input type="text" id="physicaladdress" name="physicaladdress" required>
+            <div class="error-text" id="physicaladdressError"></div>
+        </div>
+
+        <div>
+            <span>Professions</span>
+            <select name="professions" id="proffesions"></select>
+        </div>
+
+    <div class="form">
+        <div id="input0"></div>
+        <button onclick="addInput() "  class="btn" >+Add social links</button>
+    </div>
+
+    <div>
+        <button id="btn1">+Add Education</button>
+    </div>
+
+    <form id="edu">
+        <div>
+            <label for="educ_t">Education Type </label><br />
+            <select name="educ_t" id="educ_t" aria-placeholder="40">
+                <option value="0" selected></option>
+            </select>
+            <div id="educationError" class="error-text"></div>
+        </div>
+        
+        <div>
+            <label for="educ">Education title</label><br />
+            <input
+                type="text"
+                id="educ"
+                name="educ"
+                placeholder="Education title"
+                size="40"
+            />
+            <div class="error-text" id="educError"></div>
+        </div>
+        
+        <div>
+            <label for="date">Granduation Date: </label> <br />
+            <input type="date" id="date" name="date" />
+            <div class="error-text" id="dateError"></div>
+        </div>
+
+        <div>
+            <button type="button" id="saveButton">Save</button>
+        </div>
+    </form>
+    
+    <div>
+        <button id="btn2">+Add Jobs</button>
+    </div>
+
+    <form id="job">
+        <div>
+            <label for="job_n">Job Name </label><br />
+            <select name="job_n" id="job_n" aria-placeholder="40">
+                <option value="0" selected></option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="job">Start Date</label><br />
+            <input
+                type="date"
+                id="job1"
+                name="job"
+                placeholder="Start Date"
+                size="40"
+            />
+            <div class="error" id="educError"></div>
+        </div>
+        
+        <div>
+            <label for="job">End Date</label><br />
+            <input
+                type="date"
+                id="job2"
+                name="job"
+                placeholder="End Date"
+                size="40"
+            />
+            <div class="error" id="educError"></div>
+        </div>
+
+        <div>
+            <label for="job_c">City </label><br />
+            <select name="job_c" id="job_c" aria-placeholder="40">
+                <option value="Chișinău">Chișinău</option>
+                <option value="Bălți">Bălți</option>
+                <option value="Orhei">Orhei</option>
+                <option value="Tiraspol">Tiraspol</option>
+                <option value="Soroca">Soroca</option>
+                <option value="Nisporeni">Nisporeni</option>
+                <option value="Bender">Bender</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="job_cn">Company Name </label><br />
+            <select name="job_cn" id="job_cn" aria-placeholder="40">
+            </select>
+        </div>
+        
+        <div>
+            <button type="button" id="saveButton2">Save</button>
+        </div>
+    </form>
+
+    <div>
+        <button type="button" id="submitButton">Save my profile</button>
+    </div>
+    
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+    <script src="actions.js"></script>
+</body>
+
+</html>
